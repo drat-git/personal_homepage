@@ -134,6 +134,22 @@ a {
     background-color: #256448;
 }
 
+.welcome-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.welcome-link-secondary {
+    background-color: transparent;
+    border-color: #79c59e;
+}
+
+.welcome-link-secondary:hover,
+.welcome-link-secondary:focus {
+    background-color: #163a5f;
+}
+
 .profile-photo {
     width: 320px;
     height: 400px;
@@ -356,6 +372,18 @@ a {
     color: #52606b;
 }
 
+.technology-list {
+    margin: 16px 0 0;
+    padding-left: 20px;
+    color: #2f6f53;
+    font-size: 0.92rem;
+    font-weight: bold;
+}
+
+.technology-list li {
+    padding: 2px 0;
+}
+
 /* Experience */
 .experience-section {
     background-color: #ffffff;
@@ -564,6 +592,16 @@ a {
     border-top: 6px solid #6c8f7c;
 }
 
+/* Simple hover feedback for the main content cards */
+.skill-block:hover,
+.learning-block:hover,
+.experience-block:hover,
+.interest-panel:hover,
+.coursework-group:hover,
+.career-card:hover {
+    box-shadow: 0 10px 20px rgba(11, 31, 51, 0.12);
+}
+
 /* Connect With Me */
 .connect-section {
     background-color: #102b46;
@@ -619,6 +657,10 @@ a {
 
 .site-footer {
     padding: 17px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     background-color: #0b1f33;
     color: #b9c7d2;
     text-align: center;
@@ -627,6 +669,17 @@ a {
 .site-footer p {
     margin: 0;
     font-size: 0.86rem;
+}
+
+.site-footer a {
+    color: #79c59e;
+    font-size: 0.86rem;
+    font-weight: bold;
+}
+
+.site-footer a:hover,
+.site-footer a:focus {
+    color: #ffffff;
 }
 
 @media (max-width: 760px) {
