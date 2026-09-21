@@ -72,6 +72,93 @@ a {
     text-underline-offset: 6px;
 }
 
+/* Welcome banner */
+.welcome-section {
+    min-height: 610px;
+    padding: 90px 0;
+    display: flex;
+    align-items: center;
+    background-color: #102b46;
+    color: #ffffff;
+}
+
+.welcome-wrap {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.welcome-copy {
+    max-width: 650px;
+}
+
+.welcome-name {
+    margin: 0 0 12px;
+    color: #79c59e;
+    font-size: 1.05rem;
+    font-weight: bold;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.welcome-copy h1 {
+    margin: 0;
+    max-width: 620px;
+    font-size: 3.5rem;
+    line-height: 1.08;
+}
+
+.welcome-text {
+    margin: 24px 0 32px;
+    max-width: 590px;
+    color: #d9e5eb;
+    font-size: 1.2rem;
+}
+
+.welcome-link {
+    display: inline-block;
+    padding: 11px 19px;
+    background-color: #2f7d5a;
+    border: 2px solid #62b48b;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.welcome-link:hover,
+.welcome-link:focus {
+    background-color: #256448;
+}
+
+.profile-placeholder {
+    width: 310px;
+    height: 360px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0b1f33;
+    border: 3px solid #62b48b;
+    box-shadow: 16px 16px 0 #2f7d5a;
+}
+
+.profile-initials {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.profile-note {
+    margin-top: 4px;
+    color: #b9d5c7;
+    font-size: 0.9rem;
+}
+
 @media (max-width: 760px) {
     .nav-wrap {
         align-items: flex-start;
@@ -81,5 +168,26 @@ a {
 
     .nav-menu {
         justify-content: flex-start;
+    }
+
+    .welcome-section {
+        min-height: auto;
+        padding: 70px 0;
+    }
+
+    .welcome-wrap {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .welcome-copy h1 {
+        font-size: 2.6rem;
+    }
+
+    .profile-placeholder {
+        width: 270px;
+        height: 310px;
+        max-width: 92%;
     }
 }
