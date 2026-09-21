@@ -1,0 +1,4 @@
+Name: Darsh Rathi
+Website URL: https://codd.cs.gsu.edu/~drathi1/web/HW/HW1/index.html
+GitHub Repo URL: https://github.com/drat-git/personal_homepage
+Note: This website is a personal homepage highlighting my education, interests, coursework, experience, career goals, and current learning.
