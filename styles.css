@@ -333,6 +333,71 @@ a {
     color: #52606b;
 }
 
+/* Interests */
+.interests-section {
+    background-color: #f3f5f4;
+}
+
+.interests-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 24px;
+}
+
+.interest-panel {
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #cbd5d0;
+}
+
+.interest-panel h3 {
+    margin: 0 0 22px;
+    padding-bottom: 10px;
+    color: #163a5f;
+    font-size: 1.35rem;
+    border-bottom: 3px solid #2f7d5a;
+}
+
+.personal-interest-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.personal-interest-grid p {
+    margin: 0;
+    padding: 14px 16px;
+    background-color: #eef3f0;
+    border-left: 4px solid #2f7d5a;
+    color: #283b4b;
+    font-weight: bold;
+}
+
+.song-list {
+    margin: 0;
+    padding-left: 28px;
+}
+
+.song-list li {
+    padding: 7px 0 7px 5px;
+    color: #52606b;
+    border-bottom: 1px solid #e0e6e3;
+}
+
+.song-list li:last-child {
+    border-bottom: 0;
+}
+
+.song-list li::marker {
+    color: #2f7d5a;
+    font-weight: bold;
+}
+
+.song-list span {
+    color: #163a5f;
+    font-weight: bold;
+}
+
 @media (max-width: 760px) {
     .nav-wrap {
         align-items: flex-start;
@@ -385,5 +450,10 @@ a {
     .education-entry {
         padding: 24px 20px;
         gap: 15px;
+    }
+
+    .interests-layout,
+    .personal-interest-grid {
+        grid-template-columns: 1fr;
     }
 }
