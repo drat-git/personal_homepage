@@ -243,6 +243,50 @@ a {
     box-shadow: 7px 7px 0 #d2ded8;
 }
 
+/* Favorite Quote */
+.quote-section {
+    padding: 65px 0;
+    background-color: #f3f5f4;
+}
+
+.quote-wrap {
+    width: 86%;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 10px 0 10px 34px;
+    border-left: 7px solid #2f7d5a;
+}
+
+.quote-label {
+    margin: 0 0 12px;
+    color: #2f7d5a;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.quote-wrap blockquote {
+    margin: 0;
+}
+
+.quote-wrap blockquote p {
+    margin: 0 0 13px;
+    color: #163a5f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.65rem;
+    line-height: 1.45;
+}
+
+.quote-wrap blockquote footer {
+    color: #52606b;
+    font-size: 0.95rem;
+}
+
+.quote-wrap cite {
+    font-style: italic;
+}
+
 @media (max-width: 760px) {
     .nav-wrap {
         align-items: flex-start;
@@ -282,5 +326,13 @@ a {
     .skill-row,
     .about-photo-row {
         grid-template-columns: 1fr;
+    }
+
+    .quote-wrap {
+        padding-left: 22px;
+    }
+
+    .quote-wrap blockquote p {
+        font-size: 1.35rem;
     }
 }
