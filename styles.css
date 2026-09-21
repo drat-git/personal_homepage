@@ -495,6 +495,71 @@ a {
     border-top: 6px solid #6c8f7c;
 }
 
+/* Connect With Me */
+.connect-section {
+    background-color: #102b46;
+    color: #ffffff;
+}
+
+.connect-heading {
+    border-left-color: #62b48b;
+}
+
+.connect-heading .section-label {
+    color: #79c59e;
+}
+
+.connect-heading h2 {
+    color: #ffffff;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.contact-item {
+    padding: 22px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    background-color: #163a5f;
+    border: 1px solid #4a6d89;
+    border-left: 5px solid #62b48b;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-item:hover,
+.contact-item:focus {
+    background-color: #1d496f;
+    border-left-color: #ffffff;
+}
+
+.contact-type {
+    font-weight: bold;
+}
+
+.contact-detail {
+    color: #c8ddd3;
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+.site-footer {
+    padding: 17px 5%;
+    background-color: #0b1f33;
+    color: #b9c7d2;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 0.86rem;
+}
+
 @media (max-width: 760px) {
     .nav-wrap {
         align-items: flex-start;
@@ -552,7 +617,18 @@ a {
     .interests-layout,
     .personal-interest-grid,
     .coursework-grid,
-    .career-grid {
+    .career-grid,
+    .contact-grid {
         grid-template-columns: 1fr;
+    }
+
+    .contact-item {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .contact-detail {
+        text-align: left;
     }
 }
