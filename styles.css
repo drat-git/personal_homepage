@@ -159,6 +159,90 @@ a {
     font-size: 0.9rem;
 }
 
+/* Shared section spacing and headings */
+.page-section {
+    padding: 85px 0;
+}
+
+.section-wrap {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    margin-bottom: 32px;
+    padding-left: 18px;
+    border-left: 5px solid #2f7d5a;
+}
+
+.section-label {
+    margin: 0 0 4px;
+    color: #2f7d5a;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    margin: 0;
+    color: #163a5f;
+    font-size: 2.25rem;
+    line-height: 1.2;
+}
+
+/* About Me */
+.about-section {
+    background-color: #ffffff;
+}
+
+.about-intro {
+    max-width: 850px;
+    margin: 0 0 38px;
+    color: #46535e;
+    font-size: 1.08rem;
+}
+
+.skill-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-block {
+    padding: 24px;
+    background-color: #f3f5f4;
+    border-top: 4px solid #163a5f;
+    border-bottom: 1px solid #cbd5d0;
+}
+
+.skill-block h3 {
+    margin: 0 0 8px;
+    color: #163a5f;
+    font-size: 1.08rem;
+}
+
+.skill-block p {
+    margin: 0;
+    color: #52606b;
+    font-size: 0.94rem;
+}
+
+.about-photo-row {
+    margin-top: 38px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.about-photo-placeholder {
+    min-height: 190px;
+    background-color: #e4ebe7;
+    border: 2px dashed #6c8f7c;
+    box-shadow: 7px 7px 0 #d2ded8;
+}
+
 @media (max-width: 760px) {
     .nav-wrap {
         align-items: flex-start;
@@ -189,5 +273,14 @@ a {
         width: 270px;
         height: 310px;
         max-width: 92%;
+    }
+
+    .page-section {
+        padding: 65px 0;
+    }
+
+    .skill-row,
+    .about-photo-row {
+        grid-template-columns: 1fr;
     }
 }
