@@ -327,6 +327,35 @@ a {
     color: #52606b;
 }
 
+/* Currently Learning */
+.learning-section {
+    background-color: #f3f5f4;
+}
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.learning-block {
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #cbd5d0;
+    border-bottom: 5px solid #2f7d5a;
+}
+
+.learning-block h3 {
+    margin: 0 0 10px;
+    color: #163a5f;
+    font-size: 1.2rem;
+}
+
+.learning-block p {
+    margin: 0;
+    color: #52606b;
+}
+
 /* Interests */
 .interests-section {
     background-color: #f3f5f4;
@@ -610,6 +639,7 @@ a {
 
     .interests-layout,
     .personal-interest-grid,
+    .learning-grid,
     .coursework-grid,
     .career-grid,
     .contact-grid {
