@@ -453,6 +453,48 @@ a {
     color: #163a5f;
 }
 
+/* Dream Jobs */
+.careers-section {
+    background-color: #f3f5f4;
+}
+
+.career-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.career-card {
+    min-height: 220px;
+    padding: 30px 26px;
+    background-color: #ffffff;
+    border: 1px solid #cbd5d0;
+    box-shadow: 0 8px 16px rgba(11, 31, 51, 0.06);
+}
+
+.career-card h3 {
+    margin: 0 0 15px;
+    color: #163a5f;
+    font-size: 1.3rem;
+}
+
+.career-card p {
+    margin: 0;
+    color: #52606b;
+}
+
+.product-card {
+    border-top: 6px solid #2f7d5a;
+}
+
+.sales-card {
+    border-top: 6px solid #163a5f;
+}
+
+.founder-card {
+    border-top: 6px solid #6c8f7c;
+}
+
 @media (max-width: 760px) {
     .nav-wrap {
         align-items: flex-start;
@@ -509,7 +551,8 @@ a {
 
     .interests-layout,
     .personal-interest-grid,
-    .coursework-grid {
+    .coursework-grid,
+    .career-grid {
         grid-template-columns: 1fr;
     }
 }
