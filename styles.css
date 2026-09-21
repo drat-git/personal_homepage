@@ -398,6 +398,61 @@ a {
     font-weight: bold;
 }
 
+/* Coursework */
+.coursework-section {
+    background-color: #ffffff;
+}
+
+.coursework-intro {
+    max-width: 720px;
+    margin: -10px 0 30px;
+    color: #52606b;
+}
+
+.coursework-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.coursework-group {
+    padding: 25px 28px;
+    background-color: #f8faf9;
+    border: 1px solid #cbd5d0;
+    border-top: 6px solid #163a5f;
+}
+
+.coursework-group h3 {
+    margin: 0 0 16px;
+    color: #163a5f;
+    font-size: 1.2rem;
+}
+
+.coursework-group ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.coursework-group li {
+    border-top: 1px solid #dde5e1;
+}
+
+.coursework-group a {
+    display: block;
+    padding: 11px 4px;
+    color: #2f6f53;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.coursework-group a:hover,
+.coursework-group a:focus {
+    padding-left: 10px;
+    background-color: #eaf2ee;
+    color: #163a5f;
+}
+
 @media (max-width: 760px) {
     .nav-wrap {
         align-items: flex-start;
@@ -453,7 +508,8 @@ a {
     }
 
     .interests-layout,
-    .personal-interest-grid {
+    .personal-interest-grid,
+    .coursework-grid {
         grid-template-columns: 1fr;
     }
 }
